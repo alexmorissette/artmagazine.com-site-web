@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact - Art Magazine</title>
+    <link rel="stylesheet" href="assets/css/master.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
+    <script src="assets/scripts/script1.js"></script>
+  </head>
+  <body id="contact-bg">
+    <div class="wrapper">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo">
+            A R T M A G A Z I N E
+          </div>
+          <div class="menu">
+            <div class="menu-item">
+              <a href="Accueil.html">Accueil</a>
+            </div>
+            <div class="menu-item">
+              <a href="artistes.html">Artistes</a>
+            </div>
+            <div class="menu-item">
+              <a href="oeuvres.html">Oeuvres</a>
+            </div>
+            <div class="menu-item">
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container containerSecondPage">
+          <h1 class="bullseye">CONTACT</h1>
+          <div class="article bullseye">
+            <form class="form" action="contact.html" method="get">
+              <div class="fieldset center">
+                <div>
+                  <h4>Laissez-nous un message...</h4>
+                </div>
+                <textarea id="user-message" name="message" rows="8" cols="120">Votre message...</textarea>
+                <div class="elementInput">
+                  <label for="prenom" class="label">Prénom :</label>
+                  <input id="prenom" class="formInput" type="text" name="prenom" required>
+                </div>
+                <div class="elementInput">
+                  <label for="nom" class="label">Nom :</label>
+                  <input id="nom" class="formInput" type="text" name="nom" required>
+                </div>
+                <div class="elementInput">
+                  <label for="email" class="label">Courriel :</label>
+                  <input id="email" class="formInput" type="email" name="email" placeholder="alias@domaine.xxx" required>
+                </div>
+                <div class="center">
+                  <button type="submit" id="envoi" class="button1" value="submited" name="submit">Envoyer</button>
+                </div>
+                <div id="merci" style="display: none;" class="center"></div>
+              </div>
+
+              <div class="fieldset">
+                <div id="question-interet">
+                  <h4>Seriez-vous interessé à vous procurer un ou des tableaux d'artistes d'Art magazine?</h4>
+                  <div class="elementInput">
+                    <label for="interet-oui">Oui </label>
+                    <input type="radio" id="interet-oui" name="interet" value="Oui">
+                    <label for="interet-pe">Peut-être un jour... </label>
+                    <input type="radio" id="interet-pe" name="interet" value="PE">
+                  </div>
+                </div>
+                <!-- si réponse peut-être-->
+                <div id="reponse-pe" class="elementInput" style="display: none;">
+                  Merci pour votre visite sur le site d'Art Magazine!
+                </div>
+                <!-- reponse oui-->
+                <div id="question-artiste" style="display: none;">
+                  <h4>Quelle(s) toile(s) aimeriez-vous? Faites une sélection (ctrl-click ou shift-click).</h4>
+                  <!-- Select toiles -->
+                  <div class="elementInput">
+                    <select id="select-toile" class="custom-select" name="select-toile" multiple="multiple" size="7">
+                      <optgroup label="Paul Morissette">
+                        <option value="Moulin">Moulin</option>
+                        <option value="PremierVillage">PremierVillage</option>
+                        <option value="ChezVictor">ChezVictor</option>
+                        <option value="Connexion">Connexion</option>
+                        <option value="Mer">Mer</option>
+                      </optgroup>
+                      <optgroup label="France Bellefeuille">
+                        <option value="FleursAutomne">Fleurs d'automne</option>
+                        <option value="Bouche">Bouche</option>
+                        <option value="Groseille">Groseille</option>
+                        <option value="Aubergines">Aubergines</option>
+                        <option value="Avocat">Avocat</option>
+                      </optgroup>
+                      <optgroup label="Guy-Anne Massicotte">
+                        <option value="Clementines">Clémentines</option>
+                        <option value="Coco">Coco</option>
+                        <option value="Anchois">Anchois</option>
+                        <option value="PetitesPommes">Petites pommes</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer bullsCol">
+          <div class="space-around">
+            <a href="contact.html">CONTACT</a>
+          </div>
+          <div>
+            @ AMW - Tous droits réservés - <span class="copyYear"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+Light pink #ffcce7
+sage #daf2dc
+sky blue #81b7d2
+grape #4d5198
+
+tan #e0a96d

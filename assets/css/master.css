@@ -1,0 +1,329 @@
+/*ARTMAGAZINE*/
+/********************** ELEMENTS ************************/
+@font-face{
+  font-family: Lato;
+  /*rc: url('https://fonts.googleapis.com/css?family=Noto_Sans_JP');*/
+}
+body{
+margin: 0;
+font-size: 1.2rem;
+font-family: Lato, open;
+}
+a{
+  text-decoration: none;
+  color: #4d5198; /*Grape*/
+}
+a:hover{
+  transition: color 0.7s ease;
+  color: black;
+}
+a:active{
+  color: black;
+}
+
+/*****************Background contact *************/
+
+
+/***************** STRUCTURE*************************/
+/*
+header 10%
+showcase: 20%
+bottom-showcase: 10%
+main: 45%
+footer: 15%
+
+*/
+
+.wrapper{
+  height: 100vh;
+  /*width: 100%;*/
+}
+.header{
+  background-color: #daf2dc;
+  height: 10%;
+  width: 100%;
+
+}
+.content{
+  height: auto;
+}
+
+.aside{
+  float: right;
+  width: 24%;
+  margin-top: 50px;
+}
+
+
+.bottom-showcase{
+  margin-top: -6%;
+  flex-direction: row;
+  /*height: 10%;*/
+}
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#fp-main{
+  float: left;
+  width: 75%;
+}
+
+#contact-bg{
+  /*background-color: white;*/
+
+  background-image:url("../images/tableaux/renececil/toile1.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  background-color: lightgrey;
+  background-blend-mode:darken;
+}
+
+.footer{
+  /*text-align: center;*/
+  background-color: #e0a96d;
+  height: 15%;
+  width: 100%;
+  }
+
+/************************ UTILITAIRES *********************/
+.space-around{
+  margin: 10px;
+}
+.box{
+  width: 90%;
+  padding-bottom: 30px;
+}
+
+.bullseye{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bullsCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rounded{
+  border-radius: 20px;
+}
+.img-left{
+  float: left;
+  padding: 20px;
+}
+.img-right{
+  float: right;
+  padding: 20px;
+}
+.button1{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 5%;
+  border-radius: 15px;
+  background-color: #81b7d2;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.button2{
+
+  text-align: center;
+  padding: 10px 5%;
+  border-radius: 15px;
+  background-color: #81b7d2;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+button{
+  outline: none;
+  border: none;
+  margin: 10px;
+}
+.center{
+  text-align: center;
+}
+
+
+/*////////////////////// HEADER ///////////////////////*/
+
+/************************* NAVBAR ***************************/
+.navbar{
+  text-align: right;
+  padding: 18px;
+}
+
+
+/*********************** LOGO   ***************************/
+.logo{
+  display: block;
+  text-align: left;
+  width: 300px;
+  float: left;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/******************************MENU ******************************/
+.menu{
+  width: 50%;
+  padding: 10px;
+  float: right;
+
+}
+.menu-item{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 3%;
+  color: #daf2dc;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+/********************* SHOWCASE **********************/
+
+
+.thumbs{
+  position: relative;
+  display: inline;
+  margin: 10px;
+  opacity: 1;
+}
+.thumbs img{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.caroussel img{
+  border-radius: 0 0 20px 20px;
+}
+
+
+
+/*/////////////////////// MAIN /////////////////////*/
+.container{
+  margin: 2% 5%;
+  min-width: 200px;
+  /*background-color: white;*/
+}
+
+.containerSecondPage{
+margin-top: 6%;
+}
+.article{
+  padding: 2%;
+  display: flow-root;
+}
+.bio{
+  display:none;
+}
+.gallery img{
+  max-width:200px;
+  min-width: 100px;
+  border-radius: 50%;
+  margin: 1%;
+}
+.gallery{
+  text-align: center;
+  margin-top:2%;
+}
+
+
+/*////////////////////// ASIDE ////////////////////*/
+
+
+.dateBox{
+  border: 2px solid #81b7d2; /*Sy blue*/
+  border-radius: 10px;
+  background-color: #ffcce7; /*Light pin*/
+  padding: 5px;
+
+}
+.event{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 3% 0;
+}
+.eventsYear{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+/*///////////////////// FOOTER //////////////////////*/
+
+
+
+/********************** FORM ***********************/
+.form{
+  margin:auto 20%;
+  padding: 2%;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 20px;
+
+}
+.formInput{
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  font-family: lato;
+  border-radius: 5px;
+  padding-left: 10px;
+
+}
+
+.label{
+  /*margin-right: 50px;*/
+}
+.elementInput{
+  padding: 1%;
+}
+textarea{
+  outline: none;
+  min-width: 300px;
+  min-height: 100px;
+  max-width: 450px;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: inherit;
+
+}
+.fieldset{
+  margin: 2%;
+  border-bottom: 2px solid #ffcce7;
+  padding: inherit;
+}
+select{
+  outline: none;
+  display: table-row;
+  padding: 20px;
+}
+optgroup{
+  display: table-cell;
+}
+.custom-select{
+  font-family: lato;
+  font-size: 16px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#merci, #envoi{
+  margin-top: 10px;
+}
